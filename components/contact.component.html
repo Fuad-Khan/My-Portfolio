@@ -1,0 +1,57 @@
+document.write(`
+ <!-- Contact Section -->
+ <section class="section" id="contact">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>mk_fuad@yahoo.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+880 1XXX XXXXXX</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/fuad-khan-a2a821257" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Fuad-Khan" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://facebook.com/mk.fuad.184" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/fuadkhan" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" action="sendmail.php" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+`);

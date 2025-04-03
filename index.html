@@ -1,129 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fuad Khan | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css"> <!-- This should come first -->
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+   
 </head>
 <body>
-    <header>
-        <div class="logo">Fuad Khan</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <script src="components/navbar.component.html"></script>
+    
+    <!-- Hero Section -->
+    <script src="components/hero.component.html"></script>
+    
+    <!-- About Section -->
+    <script src="components/about.component.html"></script>
+    
+    <!-- Skills Section -->
+    <script src="components/skills.component.html"></script>
+    
+    <!-- Projects Section -->
+    <script src="components/projects.component.html"></script>
+    
+    <!-- Experience Section -->
+    <script src="components/experience.component.html"></script>
+    
+    <!-- Contact Section -->
+    <script src="components/contact.component.html"></script>
+    
+    <!-- Footer -->
+    <script src="components/footer.component.html"></script>
 
-    <section id="home" class="home-section">
-        <div class="intro">
-            <h1>Hello, I'm <span>Fuad Khan</span></h1>
-            <p>Welcome to my portfolio! I am a passionate software engineer with experience in web development, coding, and more.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-       <!-- Profile Picture -->
-<div class="profile-pic-container">
-    <img src="Profile-Picture.jpg" alt="Profile Picture" class="profile-pic">
-    <div class="social-media">
-        <a href="https://www.facebook.com/mk.fuad.184" target="_blank" class="social-media-icon facebook" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i> <!-- FontAwesome icon example -->
-        </a>
-        <a href="https://www.linkedin.com/in/fuad-khan-a2a821257" target="_blank" class="social-media-icon linkedin" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i> <!-- FontAwesome icon example -->
-        </a>
-        <a href="https://github.com/Fuad-Khan" target="_blank" class="social-media-icon github" aria-label="GitHub">
-            <i class="fab fa-github"></i> <!-- FontAwesome icon example -->
-        </a>
-    </div>
-</div>
-
-    </section>
-
-    <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <div class="details">
-            <div class="detail-box">
-                <h3>Education</h3>
-                <ul>
-                    <li>B.Sc. in Software Engineering, Daffodil International University</li>
-                    <li>Jessore Govt. City College</li>
-                    <li>Govt. Naldanga Bhushan Pilot High School</li>
-                </ul>
-            </div>
-            <div class="detail-box">
-                <h3>Skills</h3>
-                <ul>
-                    <li>Programming Languages: C, Java, SQL</li>
-                    <li>Front-end Development: HTML, CSS</li>
-                    <li>Version Control: VS Code, Figma</li>
-                </ul>
-            </div>
-            <div class="detail-box">
-                <h3>Contact</h3>
-                <ul>
-                    <li>Email: mk_fuad@yahoo.com</li>
-                    <li>Location: Jashore, Khulna Division, Bangladesh</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="project-gallery">
-            <div class="project-card">
-                
-                <h3>Retailer System Java Project</h3>
-                <a href="https://github.com/Fuad-Khan/Retailer-System-Java-Project" target="_blank">Githb link</a>
-               
-            </div>
-            <div class="project-card">
-            
-                <h3>OBSTACLE AVOIDING ROBOT</h3>
-                <a href="https://github.com/Fuad-Khan/OBSTACLE-AVOIDING-ROBOT" target="_blank">Githb link</a>
-            </div>
-           
-        </div>
-    </section>
-
-    <section id="services" class="services-section">
-        <h2>Services</h2>
-        <div class="services-container">
-            <div class="service-item">
-                <h3>Web Development</h3>
-                <p>Building responsive and dynamic websites.</p>
-            </div>
-            <div class="service-item">
-                <h3>Software Engineering</h3>
-                <p>Developing software solutions and applications.</p>
-            </div>
-            <div class="service-item">
-                <h3>Consultation</h3>
-                <p>Providing expert advice on tech-related issues.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out if you have any questions or would like to work together!</p>
-        <form action="submit_form.php" method="post">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Fuad Khan. All rights reserved.</p>
-    </footer>
+    <script type="module" src="scripts/modules/nav.js"></script>
+    <script type="module" src="scripts/script.js"></script>
 </body>
 </html>
