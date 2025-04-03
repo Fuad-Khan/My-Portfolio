@@ -1,57 +1,221 @@
 document.write(`
- <!-- Contact Section -->
- <section class="section" id="contact">
-    <div class="section-container">
-        <div class="section-header">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's work together</p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h3>Email</h3>
-                        <p>mk_fuad@yahoo.com</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h3>Location</h3>
-                        <p>Dhaka, Bangladesh</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+880 1XXX XXXXXX</p>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/fuad-khan-a2a821257" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Fuad-Khan" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://facebook.com/mk.fuad.184" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/fuadkhan" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-            <form class="contact-form" action="sendmail.php" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
-        </div>
+<!-- Contact Section -->
+<section class="section contact" id="contact">
+  <div class="contact-container">
+    <div class="section-header">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Let's work together</p>
+      <div class="section-divider"></div>
     </div>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="info-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M22 6L12 13L2 6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="info-content">
+            <h3>Email</h3>
+            <a href="mailto:mk_fuad@yahoo.com">mk_fuad@yahoo.com</a>
+            <a href="mailto:khan35-883@diu.edu.bd">khan35-883@diu.edu.bd</a>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="info-content">
+            <h3>Location</h3>
+            <p>Dhaka, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 16.92V19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V16.92C2 16.37 2.21 15.84 2.58 15.44C2.95 15.04 3.45 14.81 3.98 14.79L4 14.79C5.12 14.79 6.18 15.28 6.91 16.13L8 17.5C8.82 18.46 10.18 18.46 11 17.5L12.09 16.13C12.82 15.28 13.88 14.8 15 14.8L15.02 14.8C15.55 14.82 16.05 15.05 16.42 15.45C16.79 15.85 17 16.38 17 16.93V19"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M18 7C18 5.4087 17.3679 3.88258 16.2426 2.75736C15.1174 1.63214 13.5913 1 12 1C10.4087 1 8.88258 1.63214 7.75736 2.75736C6.63214 3.88258 6 5.4087 6 7C6 9.5 7 11 8 12.5C9 14 10 15.5 12 15.5C14 15.5 15 14 16 12.5C17 11 18 9.5 18 7Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="info-content">
+            <h3>Phone</h3>
+            <a href="tel:+8801726121880">+880 1726 121880</a>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a
+            href="https://linkedin.com/in/fuad-khan-a2a821257"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/Fuad-Khan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017C2 16.425 4.865 20.183 8.839 21.517C9.339 21.608 9.521 21.305 9.521 21.042C9.521 20.809 9.513 20.165 9.512 19.313C6.726 19.938 6.14 17.95 6.14 17.95C5.684 16.81 5.029 16.5 5.029 16.5C4.121 15.88 5.1 15.9 5.1 15.9C6.102 15.97 6.629 16.93 6.629 16.93C7.523 18.45 8.97 18 9.54 17.76C9.63 17.11 9.889 16.67 10.18 16.42C7.954 16.17 5.62 15.31 5.62 11.49C5.62 10.39 6.009 9.49 6.649 8.79C6.546 8.54 6.202 7.52 6.747 6.15C6.747 6.15 7.586 5.88 9.496 7.17C10.295 6.95 11.15 6.84 12 6.84C12.85 6.84 13.705 6.95 14.504 7.17C16.414 5.88 17.253 6.15 17.253 6.15C17.798 7.52 17.454 8.54 17.351 8.79C17.991 9.49 18.38 10.39 18.38 11.49C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26C14.5 19.6 14.49 20.68 14.49 21.042C14.49 21.307 14.67 21.612 15.18 21.514C19.137 20.175 22 16.418 22 12.017C22 6.484 17.523 2 12 2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://facebook.com/mk.fuad.184"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.878V14.891H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.891H13.563V21.878C18.343 21.128 22 16.991 22 12Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://twitter.com/fuadkhan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.162 5.656C21.398 5.993 20.589 6.215 19.761 6.313C20.633 5.791 21.288 4.969 21.6 4.001C20.78 4.487 19.881 4.83 18.944 5.015C18.169 4.183 17.084 3.673 15.888 3.673C13.646 3.673 11.827 5.506 11.827 7.764C11.827 8.049 11.858 8.327 11.917 8.595C8.503 8.42 5.471 6.75 3.39 4.199C3.079 4.752 2.901 5.386 2.901 6.057C2.901 7.33 3.552 8.459 4.529 9.115C3.825 9.103 3.157 8.909 2.575 8.577V8.627C2.575 10.635 4.003 12.309 5.924 12.688C5.622 12.773 5.303 12.818 4.975 12.818C4.744 12.818 4.521 12.794 4.302 12.749C4.759 14.397 6.279 15.621 8.075 15.655C6.669 16.789 4.9 17.469 2.98 17.469C2.686 17.469 2.396 17.452 2.11 17.418C3.911 18.626 6.069 19.318 8.38 19.318C15.878 19.318 19.864 12.888 19.864 7.169C19.864 6.994 19.861 6.82 19.853 6.647C20.666 6.054 21.361 5.308 22.162 5.656Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" 
+      action="https://formspree.io/f/mvgkwblz" 
+      method="POST"
+      enctype="multipart/form-data">
+    <input type="hidden" name="_subject" value="New message from portfolio">
+    <input type="hidden" name="_replyto">
+    <input type="hidden" name="_language" value="en">
+    
+    <div class="form-group">
+        <input type="text" name="name" id="name" placeholder=" " required>
+        <label for="name">Your Name</label>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" id="email" placeholder=" " required>
+        <label for="email">Your Email</label>
+    </div>
+    <div class="form-group">
+        <input type="text" name="subject" id="subject" placeholder=" " required>
+        <label for="subject">Subject</label>
+    </div>
+    <div class="form-group">
+        <textarea name="message" id="message" placeholder=" " required></textarea>
+        <label for="message">Your Message</label>
+    </div>
+    <button type="submit" class="btn-primary">
+        <span>Send Message</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+</form>
+    </div>
+  </div>
 </section>
 `);

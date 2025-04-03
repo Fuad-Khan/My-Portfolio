@@ -1,20 +1,27 @@
 document.write(`
-  <!-- Footer -->
-  <footer class="footer">
+<!-- Compact Footer -->
+<footer class="footer">
     <div class="footer-container">
         <div class="footer-content">
-            <div class="footer-logo">MK</div>
-            <p>Full Stack Developer & Software Engineer</p>
-        </div>
-        <div class="footer-links">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <div class="footer-brand">
+                <div class="footer-logo">MK</div>
+                <p>Fuad Khan • Software Engineer</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
         <div class="footer-copyright">
-            <p>&copy; 2025 Fuad Khan. All rights reserved.</p>
+            <p>&copy; <span id="current-year">2025</span> All rights reserved</p>
         </div>
     </div>
 </footer>
+
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 `);

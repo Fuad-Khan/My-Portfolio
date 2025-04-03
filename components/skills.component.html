@@ -1,42 +1,78 @@
 document.write(`
- <!-- Skills Section -->
-<section class="section" id="skills">
+<!-- Skills Section -->
+<section class="section skills" id="skills">
     <div class="section-container">
         <div class="section-header">
             <h2 class="section-title">Technical Skills</h2>
             <p class="section-subtitle">Technologies I work with</p>
+            <div class="section-divider"></div>
         </div>
         <div class="skills-grid">
             <!-- Programming Languages -->
             <div class="skill-category">
-                <h3 class="category-title">Programming Languages</h3>
+                <div class="category-header">
+                    <i class="devicon-code-plain"></i>
+                    <h3 class="category-title">Programming Languages</h3>
+                </div>
                 <div class="skills-list">
                     <div class="skill-item">
-                        <i class="devicon-java-plain colored"></i>
-                        <span>Java</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C">
+                            </div>
+                            <span class="skill-name">C</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%"></div>
+                            <div class="skill-level" data-level="90"></div>
+                            <span class="skill-percent">90%</span>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <i class="devicon-python-plain colored"></i>
-                        <span>Python</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java">
+                            </div>
+                            <span class="skill-name">Java</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%"></div>
+                            <div class="skill-level" data-level="85"></div>
+                            <span class="skill-percent">85%</span>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <i class="devicon-javascript-plain colored"></i>
-                        <span>JavaScript</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 90%"></div>
+                            <div class="skill-level" data-level="60"></div>
+                            <span class="skill-percent">60%</span>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <i class="devicon-php-plain colored"></i>
-                        <span>PHP</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python">
+                            </div>
+                            <span class="skill-name">Python</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 75%"></div>
+                            <div class="skill-level" data-level="30"></div>
+                            <span class="skill-percent">30%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP">
+                            </div>
+                            <span class="skill-name">PHP</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85"></div>
+                            <span class="skill-percent">85%</span>
                         </div>
                     </div>
                 </div>
@@ -44,27 +80,45 @@ document.write(`
             
             <!-- Frameworks & Libraries -->
             <div class="skill-category">
-                <h3 class="category-title">Frameworks & Libraries</h3>
+                <div class="category-header">
+                    <i class="devicon-framework-plain"></i>
+                    <h3 class="category-title">Frameworks & Libraries</h3>
+                </div>
                 <div class="skills-list">
                     <div class="skill-item">
-                        <i class="devicon-laravel-plain colored"></i>
-                        <span>Laravel</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="Laravel">
+                            </div>
+                            <span class="skill-name">Laravel</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%"></div>
+                            <div class="skill-level" data-level="40"></div>
+                            <span class="skill-percent">50%</span>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <i class="devicon-bootstrap-plain colored"></i>
-                        <span>Bootstrap</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                            </div>
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%"></div>
+                            <div class="skill-level" data-level="75"></div>
+                            <span class="skill-percent">75%</span>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <i class="devicon-react-original colored"></i>
-                        <span>React</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React">
+                            </div>
+                            <span class="skill-name">React</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 70%"></div>
+                            <div class="skill-level" data-level="10"></div>
+                            <span class="skill-percent">10%</span>
                         </div>
                     </div>
                 </div>
@@ -72,27 +126,69 @@ document.write(`
             
             <!-- Tools & Databases -->
             <div class="skill-category">
-                <h3 class="category-title">Tools & Databases</h3>
+                <div class="category-header">
+                    <i class="devicon-tools-plain"></i>
+                    <h3 class="category-title">Tools & Databases</h3>
+                </div>
                 <div class="skills-list">
                     <div class="skill-item">
-                        <i class="devicon-mysql-plain colored"></i>
-                        <span>MySQL</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://www.vectorlogo.zone/logos/microsoft_powerbi/microsoft_powerbi-icon.svg" alt="Power BI">
+                            </div>
+                            <span class="skill-name">Power BI</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 85%"></div>
+                            <div class="skill-level" data-level="75"></div>
+                            <span class="skill-percent">75%</span>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <i class="devicon-git-plain colored"></i>
-                        <span>Git</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/SPSS_logo.svg" alt="SPSS">
+                            </div>
+                            <span class="skill-name">SPSS</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 80%"></div>
+                            <div class="skill-level" data-level="70"></div>
+                            <span class="skill-percent">70%</span>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <i class="devicon-docker-plain colored"></i>
-                        <span>Docker</span>
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL">
+                            </div>
+                            <span class="skill-name">MySQL</span>
+                        </div>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 65%"></div>
+                            <div class="skill-level" data-level="90"></div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git">
+                            </div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="85"></div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker">
+                            </div>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-level" data-level="20"></div>
+                            <span class="skill-percent">20%</span>
                         </div>
                     </div>
                 </div>
@@ -100,5 +196,4 @@ document.write(`
         </div>
     </div>
 </section>
-
 `);
