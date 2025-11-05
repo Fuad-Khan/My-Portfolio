@@ -224,7 +224,7 @@
     transform: translateY(20px);
 }
 
-.tech-badge.html {
+.tech-badge.python {
     background: linear-gradient(135deg, #E34F26, #EF652A);
     color: white;
     top: -10px;
@@ -233,7 +233,7 @@
     animation-delay: 1s;
 }
 
-.tech-badge.css {
+.tech-badge.html {
     background: linear-gradient(135deg, #1572B6, #3399FF);
     color: white;
     bottom: 30px;
@@ -251,7 +251,7 @@
     animation-delay: 1.2s;
 }
 
-.tech-badge.react {
+.tech-badge.php {
     background: linear-gradient(135deg, #61DAFB, #2B6CB0);
     color: white;
     bottom: -10px;
@@ -426,11 +426,11 @@
         padding: 0.4rem 0.8rem;
     }
     
-    .tech-badge.html {
+    .tech-badge.python {
         left: -10px;
     }
     
-    .tech-badge.css {
+    .tech-badge.html {
         right: -15px;
     }
     
