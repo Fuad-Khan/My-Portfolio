@@ -88,8 +88,8 @@ Expected Graduation: **2026**
 ## 📫 Contact
 
 - 🌐 Portfolio: https://fuadkhan.vercel.app  
-- 💼 LinkedIn: *(https://www.linkedin.com/in/m-fuad-khan/)*  
-- 📧 Email: *(mm.fuad.khan@gmail.com)*  
+- 💼 LinkedIn: https://www.linkedin.com/in/m-fuad-khan/ 
+- 📧 Email: mm.fuad.khan@gmail.com
 
 ---
 
